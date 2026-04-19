@@ -1,0 +1,11 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceResolver
+metadata:
+  name: frontend
+  namespace: default
+spec:
+  failover:
+    "*":
+      targets:
+        - peer: dc1
+          service: frontend

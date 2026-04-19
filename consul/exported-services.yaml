@@ -1,0 +1,37 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ExportedServices
+metadata:
+  name: default
+  namespace: default
+spec:
+  services:
+    - name: frontend
+      consumers:
+        - peer: dc2
+    - name: productcatalogservice
+      consumers:
+        - peer: dc2
+    - name: cartservice
+      consumers:
+        - peer: dc2
+    - name: checkoutservice
+      consumers:
+        - peer: dc2
+    - name: currencyservice
+      consumers:
+        - peer: dc2
+    - name: paymentservice
+      consumers:
+        - peer: dc2
+    - name: shippingservice
+      consumers:
+        - peer: dc2
+    - name: emailservice
+      consumers:
+        - peer: dc2
+    - name: recommendationservice
+      consumers:
+        - peer: dc2
+    - name: adservice
+      consumers:
+        - peer: dc2
