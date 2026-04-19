@@ -56,19 +56,19 @@ This project uses **HashiCorp Consul** as a **Kubernetes service mesh** on **mor
 **01) App pods**  
 Online Boutique pods running / ready.
 
-01 app pods
+![01 app pods](screenshots/01-verify-app-pods-status.png)
 
 **02) Consul system pods**  
 Consul Helm components (servers, connect inject, gateways, controller, etc.) healthy.
 
-02 Consul Helm and system pods
+![02 Consul Helm and system pods](screenshots/02-verify-consul-system-pods.png)
 
 **03) Cluster peering**  
 Peering between datacenters active.
 
-03 cluster peering
+![03 cluster peering](screenshots/03-verify-cluster-peering-sync.png)
 
 **04) Cross-cluster discovery**  
 Cross-cluster service discovery / mesh traffic visible.
 
-04 cross-cluster and discovery
+![04 cross-cluster and discovery](screenshots/04-cross-cluster-service-discovery.png)
