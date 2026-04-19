@@ -10,6 +10,8 @@ global:
 
 server:
   replicas: 1
+  extraConfig: |
+    {"advertise_addr_wan": "48.206.145.6"}
 
 connectInject:
   enabled: true
@@ -22,3 +24,6 @@ meshGateway:
   replicas: 1
   service:
     type: LoadBalancer
+  wanAddress:
+    source: "Service"
+    port: 443
